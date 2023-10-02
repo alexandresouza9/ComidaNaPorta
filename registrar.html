@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="page2.css">
+  <title>Comida na Porta</title>
+</head>
+<body>
+  <main>
+    <figure class="logo">
+        <img src="./assets/Group 1.png" alt="" />
+    </figure>
+    <section class="telaCadastro">
+          <form id="formCadastro" action="./index.html" method="post">
+            <label for="username">
+             <input type="text" id="nome" name="nome" placeholder="Nome" required/>
+            </label>
+            <label for="email">
+             <input type="email" id="email" name="email" placeholder="Email" required/>
+            </label>
+            <label for="rua">
+              <input type="text" id="rua" name="rua" placeholder="Rua" required>
+            </label>
+            <label for="num">
+              <input type="text" id="numero" name="rua" placeholder="Numero" required>
+            </label>
+            <label for="cidade">
+              <input type="text" id="cidade" name="cidade"  placeholder="Cidade" required>
+            </label>        
+            <label for="estado">
+              <input type="text" id="estado" name="estado" placeholder="Estado" required>  
+            </label>          
+            <label for="cep">
+              <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="CEP" required>
+            </label>
+            <label for="phone">
+              <input type="tel" id="phone" name="phone" placeholder="Insira seu telefone">
+            </label>
+            <label for="password">
+              <input type="password" id="password" name="password" placeholder="Senha" required/>
+            </label>
+            <label for="password-confirmation">
+              <input type="password" id="password-confirmation" name="password" placeholder="Repetir Senha" required/>
+            </label>
+            <input type="submit" id="cadastrar" value="CADASTRAR"/>
+          </form>
+        </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

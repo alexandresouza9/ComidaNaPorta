@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <title>Comida Na Porta</title>
+    </header>
+    <figure class="logo">
+        <img src="./assets/Group 1.png" alt="" />
+    </figure>
+    <nav>
+        <a href="cardapio.html">Cardápio</a>            
+        <a href="promocoes.html">Promoção</a>
+        <a href="pagamentos.html">Pagamentos</a>
+        <a href="quem-somos.html">Quem Somos</a>
+    </nav>
+    <div class="container">
+         <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Adicione as colunas de cards de pratos aqui -->
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Produtos em Promoção</h2>
+        <div id="carouselPromocao" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://renatacarbonero.com/wp-content/uploads/2021/09/frango-frito-ifood-1024x576.png" class="d-block w-100" alt="Promoção 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://renatacarbonero.com/wp-content/uploads/2021/09/refrigerante-ifood-1024x576.png" class="d-block w-100" alt="Promoção 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://renatacarbonero.com/wp-content/uploads/2021/09/hamburguer-ifood-1024x576.png" class="d-block w-100" alt="Promoção 3">
+                </div>
+                <!-- Adicione mais itens do carrossel aqui -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromocao" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPromocao" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Oferta Especial</h3>
+                    <p>Aproveite a nossa oferta especial de produtos em promoção. Delicie-se com pratos saborosos a preços incríveis!</p>
+                    <a href="#" class="btn btn-primary">Ver Promoções</a>
+                </div>
+                <div class="col-md-6">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Nosso restaurante está aberto todos os dias da semana, das 11:00 às 22:00. Venha nos visitar e saborear nossas delícias!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Comida Na Porta. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
