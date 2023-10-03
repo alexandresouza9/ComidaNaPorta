@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("formCadastro")
-  const username = document.getElementById("username")
-  const email = document.getElementById("email")
+  const username = document.getElementById("username").value
+  const email = document.getElementById("email").value
   const rua = document.getElementById("rua")
   const numero = document.getElementById("numero")
   const cidade = document.getElementById("cidade")
@@ -10,6 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const phone = document.getElementById("phone")
   const password = document.getElementById("password")
   const passwordconfirmation = document.getElementById("password-confirmation")
+
+
+  document.getElementById('formCadastro').addEventListener('submit', function(event) {
+    event.preventDefault();  // Impede o envio padrão do formulário
+  
+  
+    const dados = { nome, email };
+  
+    // Armazena os dados no localStorage
+    localStorage.setItem('dadosFormulario', JSON.stringify(dados));
+  
+    alert('Dados do formulário salvos localmente.');
+  });
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
