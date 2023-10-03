@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="page2.css">
+  <link rel="stylesheet" href="./page2.css">
   <title>Comida na Porta</title>
 </head>
 <body>
@@ -11,41 +11,82 @@
     <figure class="logo">
         <img src="./assets/Group 1.png" alt="" />
     </figure>
-    <section class="telaCadastro">
-          <form id="formCadastro" action="./index.html" method="post">
-            <label for="username">
-             <input type="text" id="nome" name="nome" placeholder="Nome" required/>
-            </label>
-            <label for="email">
-             <input type="email" id="email" name="email" placeholder="Email" required/>
-            </label>
-            <label for="rua">
-              <input type="text" id="rua" name="rua" placeholder="Rua" required>
-            </label>
-            <label for="num">
-              <input type="text" id="numero" name="rua" placeholder="Numero" required>
-            </label>
-            <label for="cidade">
-              <input type="text" id="cidade" name="cidade"  placeholder="Cidade" required>
-            </label>        
-            <label for="estado">
-              <input type="text" id="estado" name="estado" placeholder="Estado" required>  
-            </label>          
-            <label for="cep">
-              <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="CEP" required>
-            </label>
-            <label for="phone">
-              <input type="tel" id="phone" name="phone" placeholder="Insira seu telefone">
-            </label>
-            <label for="password">
-              <input type="password" id="password" name="password" placeholder="Senha" required/>
-            </label>
-            <label for="password-confirmation">
-              <input type="password" id="password-confirmation" name="password" placeholder="Repetir Senha" required/>
-            </label>
-            <input type="submit" id="cadastrar" value="CADASTRAR"/>
-          </form>
-        </section>
+    <div class="container">
+      <section class="header">
+        <h2>Nova conta</h2>
+      </section>
+  
+      <form id="form" class="form">
+        <div class="form-content error">
+          <label for="username">Nome do usuário</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite o nome do usuario..."
+          />
+          <a>Digite um o nome do usuário....</a>
+        </div>
+        <div class="form-content error">
+          <label for="rua">Rua</label>
+          <input
+            type="rua"
+            id="rua"
+            placeholder="Digite o seu endereço..."
+          />
+          <a>Aqui vai a mensagem de erro....</a>
+        </div>
+        <div class="form-content error">
+          <label for="cidade">Cidade</label>
+          <input
+            type="cidade"
+            id="cidade"
+            placeholder="Digite o nome de uma cidade..."
+          />
+          <a>Digite um o nome do usuário....</a>
+        </div>  
+        <div class="form-content error">
+            <label for="cep">Cep</label>
+            <input
+              type="cep"
+              id="cep"
+              placeholder="Digite um cep valido..."
+            />
+          <a>Digite um cep....</a>
+        </div>  
+        <div class="form-content error">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite o seu email..."
+          />
+          <a>Digite um e-mail....</a>
+        </div>
+        <div class="form-content error">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Digite sua senha..."
+          />
+          <a>Aqui vai a mensagem de erro....</a>
+          
+        </div>
+        <div class="form-content error">
+          <label for="password-confirmation">Confirmação de senha</label>
+          <input
+            type="password"
+            id="password-confirmation"
+            placeholder="Digite sua senha novamente..."
+          />
+          <a>Aqui vai a mensagem de erro....</a>
+        </div>
+  
+        <button type="submit">Cadastrar</button>  
+      </form>
+  
+    </div>
+    </section>
   </main>
   <script src="./script.js"></script>
 </body>

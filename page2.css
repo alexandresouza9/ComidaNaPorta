@@ -24,59 +24,73 @@ main {
   display: flex;
   width: 500px;
 }
-
-.telaCadastro {
-  border-radius: 20px;
-  display: flex;
-  background-color: #ffffff58;
-  border: 1px solid;
-  height: 500px;
-  justify-content: center;
-  align-items: center;
-  width: 450px;
-  }
-
-form {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  border-radius: 20px;
-  height: 500px;
+.container{
+  background-color: #fe670f;
+  border-radius: 14px;
+  margin: 14px;
+  max-width: 600px;
+  width: 100;
+  box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+  overflow: hidden;
+}
+.header{
+  background: linear-gradient(120deg, #ffb28b 0%, #ffb28b 100%);
+  padding: 24px;
+  text-align: center;
+  color: #FFF;
   width: 100%;
+  border-radius: 14px;
 }
 
-input::placeholder{
-  color: rgba(255, 255, 255, 0.424);
-  padding-left: 10px;
+.form{
+  padding: 14px;
 }
 
-form label{
+.form-content{
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  position: relative; 
+}
+
+
+.form-content label{
+  display: inline-block;
+  padding-bottom: 7px;
+  margin-bottom: 4px;
+}
+
+.form-content input{
+  display: absolute;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid #dfdfdf;
 }
 
-#nome, #email, #phone, #password1, #password2, #rua, #cidade, #estado, #cep, #numero{
-  background-color: #4e4b4b5f;
-  border: none;
-  border-radius: 7px;
-  height: 5vh;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form-content a{
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  visibility: hidden;
 }
 
-#cadastrar{
-  background-color: #000000d0;
-  border: 1px solid black;
-  color: white;
-  border-radius: 7px;
-  height: 5vh;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form button{
+  background-color: #ffb28b;
+  color: #FFF;
+  width: 100%;
+  border-radius: 14px;
+  padding: 10px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.form-content.error input{
+  border-color: #ff2525;
+}
+
+.form-content.error a{
+  color: #ff2525;
+  visibility: visible;
 }
