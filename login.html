@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scriptLogin.js" defer></script>
+    <link rel="stylesheet" href="stylesLogin.css">
+    <title>Login de Usuário</title>
+ 
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <figure class="logo">
+            <img src="./assets/Group 1.png" alt="" />
+        </figure>
+    </header>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="cadastroForm" method="post" onsubmit="validaform()">
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Entrar</button>
+            <button type="button" onclick="enviarEmail()">Esqueci a Senha</button>
+            <a href="registrar.html" class="botao">Nova Conta</a>
+        
+    </div>
+        </form>
+    </div>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        © 2023 Comida na Porta - Todos os direitos reservados
+    </footer>
+</body>
+</html>

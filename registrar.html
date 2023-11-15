@@ -1,93 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./page2.css">
-  <title>Comida na Porta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCadastro.css">
+    <script src="scriptCadastro.js" defer></script>
+    <title>Cadastro de Usuário</title>
+    
+
 </head>
 <body>
-  <main>
-    <figure class="logo">
-        <img src="./assets/Group 1.png" alt="" />
-    </figure>
+    <!-- Header -->
+    <header>
+        <figure class="logo">
+            <img src="./assets/Group 1.png" alt="" />
+        </figure>
+    </header>
     <div class="container">
-      <section class="header">
-        <h2>Nova conta</h2>
-      </section>
-  
-      <form id="form" class="form">
-        <div class="form-content error">
-          <label for="username">Nome do usuário</label>
-          <input
-            type="text"
-            id="username"
-            placeholder="Digite o nome do usuario..."
-          />
-          <a>Digite um o nome do usuário....</a>
-        </div>
-        <div class="form-content error">
-          <label for="rua">Rua</label>
-          <input
-            type="rua"
-            id="rua"
-            placeholder="Digite o seu endereço..."
-          />
-          <a>Aqui vai a mensagem de erro....</a>
-        </div>
-        <div class="form-content error">
-          <label for="cidade">Cidade</label>
-          <input
-            type="cidade"
-            id="cidade"
-            placeholder="Digite o nome de uma cidade..."
-          />
-          <a>Digite um o nome do usuário....</a>
-        </div>  
-        <div class="form-content error">
-            <label for="cep">Cep</label>
-            <input
-              type="cep"
-              id="cep"
-              placeholder="Digite um cep valido..."
-            />
-          <a>Digite um cep....</a>
-        </div>  
-        <div class="form-content error">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Digite o seu email..."
-          />
-          <a>Digite um e-mail....</a>
-        </div>
-        <div class="form-content error">
-          <label for="password">Senha</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Digite sua senha..."
-          />
-          <a>Aqui vai a mensagem de erro....</a>
-          
-        </div>
-        <div class="form-content error">
-          <label for="password-confirmation">Confirmação de senha</label>
-          <input
-            type="password"
-            id="password-confirmation"
-            placeholder="Digite sua senha novamente..."
-          />
-          <a>Aqui vai a mensagem de erro....</a>
-        </div>
-  
-        <button type="submit">Cadastrar</button>  
-      </form>
-  
+        <h2>Cadastro de Usuário</h2>  
+        <form id="cadastroForm" method="post" action="index.html" onsubmit="return validaForm();">
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required onblur="buscaCep();">
+                    
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado" required>
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" name="numero" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmarSenha">Confirmar Senha:</label>
+                        <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+                    </div>
+                </div>
+            </div>
+           <button type="submit" id="cadastrarBtn">Cadastrar</submit>
+           
+        </form>
     </div>
-    </section>
-  </main>
-  <script src="./script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        © 2023 Comida na Porta - Todos os direitos reservados
+    </footer>
+
+  
 </body>
 </html>

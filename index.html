@@ -3,42 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Comida Na Porta</title>
   </head>
-  <body>
+  <header>
+    <title>Comida Na Porta</title>
 
-    <main>
-      <figure class="logo">
-        <img src="./assets/Group 1.png" alt="" />
-      </figure>
-      <section class="login">
-        <form action="cardapio.html" method="post">
-          <label for="username">
-            <input type="text" id="username" name="username" placeholder="Username" required/>
-          </label>
-          <label for="password">
-            <input type="password" id="password" name="password" placeholder="Password" required/>
-          </label>
-          <input type="submit" id="entrar" value="Entrar"/>
-          <a href="">Esqueceu sua senha?</a>
-        </form>
-      </section>
-      <section class="cadastro">
-        <a href="#" class="facebook">
-          <img src="./assets/Facebook.png" alt="" />Inscrever-se
-        </a>
-        <a href="#" class="google">
-          <img src="./assets/logo-google.png" alt="" />Inscrever-se
-        </a>
-      </section>
-      <p class="signUp">Não tem uma conta?<a href="./registrar.html">Inscrever-se</a></p>
-    </main>
+    <figure class="logo">
+      <img src="./assets/Group 1.png" alt="" />
+    </figure>
+    <nav>
+      <a href="index.html">Cardápio</a>
+      <a href="promocoes.html">Promoção</a>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="login.html">Área do Cliente</a>
+      <a href="pagamentos.html">Carrinho</a>
+    </nav>
+    <div id="nomeHeader"></div>
+    <div id="emailHeader"></div>
+  </header>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-4">Pratos Deliciosos</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://renatacarbonero.com/wp-content/uploads/2021/09/frango-frito-ifood-1024x576.png"
+              class="card-img-top"
+              alt="Prato 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Frango Frito</h5>
+              <p class="card-text">Frango frito um prato simples e gostoso.</p>
+              <button class="btn btn-primary" id="add-button-1">
+                Adicionar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://renatacarbonero.com/wp-content/uploads/2021/09/refrigerante-ifood-1024x576.png"
+              class="card-img-top"
+              alt="Prato 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Refrigerantes</h5>
+              <p class="card-text">Temos todos tipos de refrigerantes!</p>
+              <button class="btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://renatacarbonero.com/wp-content/uploads/2021/09/hamburguer-ifood-1024x576.png"
+              class="card-img-top"
+              alt="Prato 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">X-duplo</h5>
+              <p class="card-text">2 carnes,2 queijo e salada. Pão de hambúrguer.</p>
+              <button class="btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://renatacarbonero.com/wp-content/uploads/2021/09/churrasco-ifood-1024x576.png"
+              class="card-img-top"
+              alt="Prato 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Churrasco</h5>
+              <p class="card-text">Temos carnes de Boi, porco, frango e muito mais.</p>
+              <button class="btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://renatacarbonero.com/wp-content/uploads/2021/09/wrap-ifood-1024x576.png"
+              class="card-img-top"
+              alt="Prato 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tapioca</h5>
+              <p class="card-text">A melhor Tapioca da região!</p>
+              <button class="btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://renatacarbonero.com/wp-content/uploads/2021/09/pizza-ifood-1024x576.png"
+              class="card-img-top"
+              alt="Prato 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">Pizza de todos os sabores , doces e salgadas.</p>
+              <button class="btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://renatacarbonero.com/wp-content/uploads/2021/09/acai-ifood-1024x576.png"
+              class="card-img-top"
+              alt="Prato 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Açaí</h5>
+              <p class="card-text"></p>
+              <button class="btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://renatacarbonero.com/wp-content/uploads/2021/09/cupcake-ifood-1-1024x576.png"
+              class="card-img-top"
+              alt="Prato 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cupcake de chocolate</h5>
+              <p class="card-text"></p>
+              <button class="btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://renatacarbonero.com/wp-content/uploads/2021/09/barca-de-comida-japonesa-ifood-1024x576.png"
+              class="card-img-top"
+              alt="Prato 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Comida japonesa</h5>
+              <p class="card-text"></p>
+              <button class="btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 Comida Na Porta. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js">
+          // Recupere o registro do localStorage
+          const registroCadastroJSON = localStorage.getItem("registroCadastro");
+
+          if (registroCadastroJSON) {
+          // Converta a string JSON de volta para um objeto JavaScript
+          const registroCadastro = JSON.parse(registroCadastroJSON);
+
+          // Agora você pode acessar os campos do registro
+          const nome = registroCadastro.nome;
+          const cep = registroCadastro.cep;
+          const endereco = registroCadastro.endereco;
+          const bairro = registroCadastro.bairro;
+          const cidade = registroCadastro.cidade;
+          const estado = registroCadastro.estado;
+          const numero = registroCadastro.numero;
+          const telefone = registroCadastro.telefone;
+          const email = registroCadastro.email;
+      }
+
+      document.addEventListener("DOMContentLoaded", function() {
+          // Recupere o registro do localStorage
+          const registroCadastroJSON = localStorage.getItem("registroCadastro");
+
+          if (registroCadastroJSON) {
+              // Converta a string JSON de volta para um objeto JavaScript
+              const registroCadastro = JSON.parse(registroCadastroJSON);
+
+              // Acesse os campos do registro e insira-os nos elementos HTML
+              const nomeHeaderElement = document.getElementById("nomeHeader");
+              const emailHeaderElement = document.getElementById("emailHeader");
+
+              nomeHeaderElement.textContent = "Nome: " + registroCadastro.nome;
+              emailHeaderElement.textContent = "Email: " + registroCadastro.email;
+          } else {
+              console.log("Registro de cadastro não encontrado.");
+          }
+      });
+    </script>
   </body>
 </html>

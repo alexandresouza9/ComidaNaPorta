@@ -1,0 +1,89 @@
+* {
+        /* Estilo do Header */
+        header {
+            background-color: #fe670f;
+            padding: 10px 0;
+            text-align: left;
+        }
+
+        /* Estilo do Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bebbb9;
+        }
+
+        /* Estilo do Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo do Footer */
+        footer {
+            background-color: #fe670f;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Estilo das Formulário (se quiser personalizar) */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+       /* Estilo para arredondar as bordas dos campos de entrada */
+/* Estilo para arredondar as bordas dos campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Arredonda as bordas */
+    margin-right: 10px;
+}
+
+/* Adicione outros estilos modernos, como cores e sombras, se desejar */
+input[type="text"]:focus,
+input[type="email"]:focus,
+
+input[type="password"]:focus {
+    border: 1px solid #007bff; /* Cor da borda quando focado */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra quando focado */
+}
+
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Estilo para a divisão em duas colunas */
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-col {
+            width: 45%;
+        }
+
+        /* Estilo adicional para o botão "Buscar Endereço" */
+        .form-group button {
+            margin-top: 10px;
+        }
+    }

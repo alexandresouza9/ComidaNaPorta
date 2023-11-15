@@ -4,80 +4,59 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
+  
 }
+
+body{
+  background-color: #ede8e8;
+}
+/*Cardapio Header*/
 header {
-  background-color: #fe670f;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+  margin-top: 0;
+  width: auto;
+  flex-flow: row wrap;
+  height:150px;
+  display: flex;
+  align-items: center;
+  background: #fe670f;
 }
-footer {
-  background-color: #fe670f;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+
+.logo img{
+  width: 500%;
+  height: 50%;
+
 }
 
 nav {
-  background-color: #fe670f;
-  color: #fff;
-  text-align: center;
+  text-align: right;
   padding: 10px;
-  border-radius: 0px; /* Contorno arredondado */
-  display: flex;
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-   /* Contorno branco */
 }
 
 nav a {
-  color: #fff;
+  color: #1d1b1b;
   text-decoration: none;
-  margin: 0 15px;
-  
-  padding: 5px;
-  
+  margin: 30px;
+  font-size: 30px;
 }
-
 nav a:hover {
-  text-decoration:none;
-  color: black;
-  
+  text-decoration: underline;
 }
 
+/*fim header cardapio*/
 
 
-body {
-  background-color: #bebbb9;
-  height: 100%;
-  width: 100%;
-}
 
 main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
 }
 
 .logo img{
   display: flex;
   width: 500px;
- 
- 
 }
 
-.login {
-  border-radius: 20px;
-  display: flex;
-  background-color: #ffffff58;
-  border: 1px solid;
-  height: 200px;
-  justify-content: center;
-  align-items: center;
-  width: 450px;
-  }
 
 form {
   display: flex;
@@ -87,7 +66,6 @@ form {
   border-radius: 20px;
   height: 100%;
   width: 100%;
- 
 }
 
 input::placeholder{
@@ -103,7 +81,7 @@ form label{
 }
 
 #username{
-  background-color: #fff;
+  background-color: #4e4b4b5f;
   border: none;
   border-radius: 7px;
   height: 5vh;
@@ -123,7 +101,6 @@ form label{
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 #entrar{
@@ -136,19 +113,18 @@ form label{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 10px;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .cadastro{
   display: flex;
-  justify-content:space-between;
+  justify-content: space-around;
   height: 60px;
-  width: 380px;
+  width: 450px;
   text-align: center;
 }
 
@@ -156,7 +132,7 @@ a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fe670f;
+  background-color: #ffffff22;
   padding: 0 30px;
   border: none;
   border-radius: 7px;
@@ -174,8 +150,21 @@ a {
   margin-bottom: 10px;
 }
 
+.login {
+  border-radius: 20px;
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  }
 
-.facebook-logo{
- background-color: aqua;
-
+footer {
+  margin-top: 50px;
+  background-color: #fe670f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }

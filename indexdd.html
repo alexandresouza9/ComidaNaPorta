@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Delícia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurante Delícias</h1>
+    </header>
+    <nav>
+        <a href="index.html">Cardápio</a>
+        <a href="promocoes.html">Promoções</a>
+        <a href="quem-somos.html">Quem Somos</a>
+        <a href="loginold.html" id="areaClienteLink">Área do Cliente</a>
+        <span id="userName" style="display: none;"></span>
+    </nav>
+    <main>
+        <div class="logo">
+            <img src="./assets/Group 1.png" alt="Logo do Restaurante Delícia">
+        </div>
+        <div class="login">
+            <form id="loginForm">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" placeholder="Digite seu usuário">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+                <button type="button" id="entrar">Entrar</button>
+            </form>
+        </div>
+        <div class="cadastro">
+            <figure class="facebook-logo">
+                <img src="./assets/Facebook.png" alt="logo-facebook">
+            </figure>
+            <button class="facebook">Facebook</button>
+            
+            <figure class="google-logo">
+                <img src="./assets/Google-Logo-PNG-Image.png" alt="logo-google">
+            </figure>
+            <button class="google">Google</button>
+            
+        </div>
+        <p class="signUp">Ainda não tem uma conta? <a href="#">Cadastre-se</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Comida na Porta</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
